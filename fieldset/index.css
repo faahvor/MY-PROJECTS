@@ -1,0 +1,29 @@
+body{
+    margin:100px;
+}
+.inputs{
+   display: flex;
+}
+label{
+    min-width: 100px;
+}
+input{
+    padding: 5px;
+    margin-bottom: 10px;
+    width:300px;
+}
+textarea{
+    width: 300px;
+    height: 70px;
+}
+legend{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: rgb(118, 13, 30);
+}
+fieldset{
+    padding: 20px 60px;
+    width: 500px;
+    background-color: lightpink;
+}
