@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: url(redrose.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100%;
+  overflow: auto;
+}
+marquee {
+  padding-top: 150px;
+  font-size: 30px;
+  color: rgb(180, 175, 168);
+  font-family: italic;
+  text-transform: capitalize;
+  behavior: alternate;
+  direction: right;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+}
+.btn-toggle {
+  height: 100%;
+  width: 60px;
+  background-color: rgb(183, 61, 61);
+  background-image: url("hamburger.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-toggle:hover {
+  opacity: 0.5;
+}
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #222;
+  padding: 0 15px;
+  text-transform: uppercase;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navbar ul li a :hover {
+  color: #720606;
+}
+.aside-sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: calc(100vh - 60px);
+  padding: 0 6px;
+  background-color: #1b1b1b;
+  z-index: 1000;
+  transition: all 0.7s ease-in-out;
+}
+.aside-sidebar ul {
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden;
+}
+.aside-sidebar ul li {
+  list-style: none;
+}
+.aside-sidebar ul li a {
+  text-decoration: none;
+  color: rgb(163, 185, 204);
+  text-transform: uppercase;
+  padding: 0 10px;
+  white-space: nowrap;
+  height: 60px;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease-in-out;
+}
+.aside-sidebar ul li a:hover {
+  background-color: #222;
+}
+.main {
+  width: 95%;
+  position: relative;
+  top: 500px;
+}
+.main ul {
+  list-style: none;
+  overflow: hidden;
+  justify-content: space-between;
+  display: inline-flex;
+  padding-left: 100px;
+  transition: all 0.9s ease-in-out;
+}
+.main ul li {
+  padding: 20px;
+  width: 20%;
+  background-color: #720606;
+  color: rgb(163, 185, 204);
+  text-align: justify;
+}
+.main h1,
+h3 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.link {
+  padding-top: 60px;
+  color: rgb(79, 90, 100);
+  text-decoration: none;
+  font-weight: 600;
+}
